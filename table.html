@@ -9,6 +9,7 @@
         }
         th, td {
             border: 1px solid #ccc;
+                text-align: center;
         }
         th {
             background-color: cadetblue;
@@ -18,12 +19,15 @@
 <body>
     <title>표 만들기</title>
     <table>
+        <thead>
         <tr>
             <th>번호</th>
             <th>상품명</th>
             <th>수량</th>
             <th>가격</th>
         </tr>
+    </thead>
+    <tbody>
         <tr>
             <td>1</td>
             <td>콜라</td>
@@ -41,10 +45,13 @@
             <td>탄산수</td>
             <td>3개</td>
         </tr>
+        </tbody>
+        <tfoot>
         <tr>
             <td>총 금액</td>
             <td colspan="3">5,500원</td>
         </tr>
+        </tfoot>
     </table>
 </body>
 </html>
